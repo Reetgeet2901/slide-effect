@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "styles.css" >
+    <title>Document</title>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image:
+            repeating-linear-gradient(
+                to right, transparent 0 100px,
+                #25283b22 100px 101px
+            ),
+            repeating-linear-gradient(
+                to bottom, transparent 0 100px,
+                #25283b22 100px 101px
+            );
+        }
+        
+        body::before {
+    position: absolute;
+    width: 100vw;  /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    top: 0;
+    left: 0;
+    content: '';
+    background-image: url(background.png);
+    background-size: cover; /* Ensures it covers the whole page */
+    background-repeat: no-repeat;
+    background-position: center center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the background in place while scrolling */
+    pointer-events: none;
+    z-index: -1; /* Moves it behind everything */
+}
+
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="banner">
+        <div class="slider" style="--quantity: 10">
+            <div class="item" style="--position: 1"><img src="viktor.png" alt=""></div>
+            <div class="item" style="--position: 2"><img src="vi.png" alt=""></div>
+            <div class="item" style="--position: 3"><img src="caitlyn.png" alt=""></div>
+            <div class="item" style="--position: 4"><img src="ekko.png" alt=""></div>
+            <div class="item" style="--position: 5"><img src="jayce.png" alt=""></div>
+            <div class="item" style="--position: 6"><img src="silco.png" alt=""></div>
+            <div class="item" style="--position: 7"><img src="vander.png" alt=""></div>
+            <div class="item" style="--position: 8"><img src="slider.png" alt=""></div>
+            <div class="item" style="--position: 9"><img src="kid.png" alt=""></div>
+            <div class="item" style="--position: 10"><img src="arcane.png" alt=""></div>
+        </div>
+        <div class="content">
+            <div class="model"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
